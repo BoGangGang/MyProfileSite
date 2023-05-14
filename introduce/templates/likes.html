@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>LIKE</title>
+  <style>
+    .card {
+      width: 18rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-container {
+      margin-top: 2rem;
+    }
+
+    .section-gap {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 60px;">
+    <a class="navbar-brand" href="#" style="padding-left: 40px;">
+      <img src="{% static 'images/real_logo.png' %}" alt="Logo" height="90">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/mbti">MBTI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/likes">LIKE</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="section-gap"></div>
+    <h1>내가 좋아하는 것들</h1>
+    <div class="card-container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card h-100" style="margin: 10px;">
+            <img src="{% static 'images/likes/1.jpg' %}" class="card-img-top" alt="이미지 1">
+            <div class="card-body">
+              <h5 class="card-title">꾸미기</h5>
+              <p class="card-text">포스터 만들기, 다이어리 꾸미기, 편지 쓰기 등 예쁘게 꾸미는 것을 좋아합니다. 사진은 최근에 산 크록스 신발에 지비츠를 달아 예쁘게 꾸민 것이고, 지금 제일 아끼는 신발이 되었습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" style="margin: 10px;">
+            <img src="{% static 'images/likes/2.jpg' %}" class="card-img-top" alt="이미지 2">
+            <div class="card-body">
+              <h5 class="card-title">한강</h5>
+              <p class="card-text">대학에 와서 처음으로 가본 한강은 저에게 엄청난 감동을 주었습니다. 돗자리를 깔고 한강을 멍때리면서 바라보면 복잡한 생각도 정리되고, 힐링이되는 것 같습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" style="margin: 10px;">
+            <img src="{% static 'images/likes/3.jpg' %}" class="card-img-top" alt="이미지 3">
+            <div class="card-body">
+              <h5 class="card-title">태권도</h5>
+              <p class="card-text">어렸을 때부터 움직이는 걸 좋아했던 저는 태권도를 오랫동안 했습니다. 친구들이랑 땀 빼면서 운동하는게 너무 재밌습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" style="margin: 10px;">
+            <img src="{% static 'images/likes/4.jpg' %}" class="card-img-top" alt="이미지 4">
+            <div class="card-body">
+              <h5 class="card-title">고양이</h5>
+                <p class="card-text">제 갤러리에 30%는 고양이 사진일 정도로 고양이를 정말 좋아합니다. 기숙사 주변에 고양이가 자주 나타나는데 참지 못하고 항상 만지고 사진을 찍는 편입니다.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" style="margin: 10px;">
+            <img src="{% static 'images/likes/5.jpg' %}" class="card-img-top" alt="이미지 5">
+            <div class="card-body">
+              <h5 class="card-title">스키</h5>
+                <p class="card-text">스키 타는 것을 정말 좋아합니다. 올해 겨울만 해도 4-5번 갈 정도로 스키에 진심입니다. 슬로프를 빠르게 내려오면 시원하기도 하고 무엇보다 정말 재밌습니다.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" style="margin: 10px;">
+            <img src="{% static 'images/likes/6.jpg' %}" class="card-img-top" alt="이미지 6">
+            <div class="card-body">
+              <h5 class="card-title">여행</h5>
+                <p class="card-text">여행을 하면서 새로운 것들을 보고 경험하는 것을 좋아합니다. 학기 중에는 가까운 인천이나, 서울 근교를 놀러가기도 하며, 방학에는 여수, 부산, 경주, 포항, 강릉 등 다양한 곳을 놀러다닙니다.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
